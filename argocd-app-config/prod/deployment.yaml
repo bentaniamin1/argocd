@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment-prod
+  labels:
+    app: my-app-prod
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: my-app-prod
+  template:
+    metadata:
+      labels:
+        app: my-app-prod
+    spec:
+      containers:
+      - name: my-app-prod
+        image: aminbentani2000/go:1.0.0
+        # ports:
+        # - containerPort: 8080
