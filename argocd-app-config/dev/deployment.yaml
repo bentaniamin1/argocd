@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: bentaniamin1/argocd-app:1.0
+        image: aminbentani2000/go:1.0.0
         ports:
         - containerPort: 8080
