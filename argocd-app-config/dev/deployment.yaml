@@ -17,5 +17,5 @@ spec:
       containers:
       - name: my-app
         image: aminbentani2000/go:1.0.0
-        ports:
-        - containerPort: 8080
+        # ports:
+        # - containerPort: 8080
